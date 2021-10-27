@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="S8_Ej08.CSSDemo"
+             Title="CSS in Xamarin" >
+
+    <ContentPage.Resources>
+        <StyleSheetExtension Source="/CSS/GeneralStyle.css"></StyleSheetExtension>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+    
+        <StackLayout VerticalOptions="Center" Margin="20">
+            <Image Source="fotouwu" ></Image>
+            <StackLayout Orientation="Vertical">
+                <Entry Placeholder="Usuario"></Entry>
+                <Entry Placeholder="Email"></Entry>
+                <Entry Placeholder="Contraseña"></Entry>
+            </StackLayout>
+      
+            <StackLayout Orientation="Horizontal">
+                <CheckBox></CheckBox>
+                <Label Text="Recordar"></Label>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Iniciar Sesión"
+                        x:Name="btnLogin"></Button>
+                <Button Text="Registrarse"
+                        x:Name="btnSignup"></Button>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

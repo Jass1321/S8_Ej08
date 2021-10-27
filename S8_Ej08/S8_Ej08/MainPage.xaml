@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="S8_Ej08.MainPage"
+             Title="Semana 8">
+
+    <ContentPage.Resources>
+        <StyleSheetExtension Source="/CSS/StyleMain.css"></StyleSheetExtension>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+
+        <StackLayout>
+            <Frame BackgroundColor="Lavender" Padding="20" CornerRadius="0">
+                <Label Text="Styles en iOS vs Android" HorizontalTextAlignment="Center" TextColor="Purple" FontSize="36"/>
+            </Frame>
+
+            <Label Text="Explicit Style" FontSize="Subtitle" HorizontalTextAlignment="Center" />
+            <StackLayout >
+                <StackLayout Orientation="Horizontal" Spacing="20" >
+                    <Button x:Name="Item11" Text="Demo" CharacterSpacing="5" WidthRequest="135"/>
+                    <Button x:Name="Item12" Text="Control Demo" CharacterSpacing="5"/>
+                </StackLayout>
+            </StackLayout>
+
+            <Label Text="Implicit Style" FontSize="Subtitle" HorizontalTextAlignment="Center"/>
+            <StackLayout >
+                <StackLayout Orientation="Horizontal" Spacing="20" >
+                    <Button x:Name="Item13" Text="Demo" CharacterSpacing="5" WidthRequest="135"/>
+                    <Button x:Name="Item14" Text="Control Demo" CharacterSpacing="5"/>
+                </StackLayout>
+            </StackLayout>
+
+
+            <Label Text="Global Style" FontSize="Subtitle" HorizontalTextAlignment="Center"/>
+            <StackLayout>
+                <Button x:Name="Item15" Text="Global Demo" CharacterSpacing="5" />
+            </StackLayout>
+
+            <Label Text="Style Inheritance" FontSize="Subtitle" HorizontalTextAlignment="Center"/>
+            <StackLayout>
+                <Button x:Name="Item16" Text="Inheritance Demo" CharacterSpacing="5"/>
+            </StackLayout>
+
+            <Label Text="Dynamic Style" FontSize="Subtitle" HorizontalTextAlignment="Center"/>
+            <StackLayout>
+                <Button x:Name="Item17" Text="Dynamic Demo" CharacterSpacing="5"/>
+            </StackLayout>
+
+            <Label Text="Class" FontSize="Subtitle" HorizontalTextAlignment="Center"/>
+            <StackLayout>
+                <Button x:Name="Item18" Text="Class Demo" CharacterSpacing="5"/>
+            </StackLayout>
+
+            <Label Text="Style CSS" FontSize="Subtitle" HorizontalTextAlignment="Center"/>
+            <StackLayout>
+                <Button x:Name="Item19" Text="CSS Demo" CharacterSpacing="5"/>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
